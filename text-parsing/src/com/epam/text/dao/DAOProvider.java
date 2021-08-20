@@ -1,12 +1,12 @@
 package com.epam.text.dao;
 
 
-import com.epam.text.dao.impl.TextLauncherImpl;
+import com.epam.text.dao.impl.TextFromFileImpl;
 
 public class DAOProvider {
     private static final DAOProvider instance = new DAOProvider();
 
-    private DAOTextLauncher textLauncher = new TextLauncherImpl();
+    private TextFromFileAble textFromFile = new TextFromFileImpl();
 
     private DAOProvider() {
     }
@@ -15,7 +15,7 @@ public class DAOProvider {
         return instance;
     }
 
-    public DAOTextLauncher getTextLauncher() {
-        return textLauncher;
+    public TextFromFileAble getTextFromFile() {
+        return textFromFile;
     }
 }

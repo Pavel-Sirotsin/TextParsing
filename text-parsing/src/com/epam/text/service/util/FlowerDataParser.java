@@ -1,4 +1,4 @@
-package com.epam.text.dao.util;
+package com.epam.text.service.util;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
