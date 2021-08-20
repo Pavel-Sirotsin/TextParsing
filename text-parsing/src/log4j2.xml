@@ -5,9 +5,10 @@
         <property name="ARCHIVE_LOG_DIR">${LOG_DIR}/archive</property> -->
 
         <property name="pattern_file">"%d{yyyy-MM-dd HH:mm:ss} [t] %-5level %logger{5} - %msg%n"</property>
-        <property name="pattern_console">"%r [%t] %-5level %logger{5} - %msg%n"</property>
+        <property name="pattern_console">"%r [%t] %-5level %logger{1} - %msg%n"</property>
     </Properties>
     <ThresholdFilter level="trace"/>
+    <!-- ALL - DEBUG - INFO - WARN - ERROR - FATAL - OFF -TRACE -->
 
     <Appenders>
         <Console name="Console_Appender" target="SYSTEM_OUT">

@@ -2,22 +2,39 @@ package com.epam.text.entity;
 
 import java.util.List;
 
-public class Text {
-    List<Sentence> sentences;
+public class Text implements TextPart {
+    private String content;
+    private List<Paragraph> paragraphList;
 
     public Text() {
     }
 
-    public Text(List<Sentence> sentences) {
-        this.sentences = sentences;
+    public Text(String content) {
+        this.content = content;
     }
 
-    public List<Sentence> getSentences() {
-        return sentences;
+    public String getContent() {
+        return content;
     }
 
-    public void setSentences(List<Sentence> sentences) {
-        this.sentences = sentences;
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public List<Paragraph> getParagraphList() {
+        return paragraphList;
+    }
+
+    public void setParagraphList(List<Paragraph> list) {
+        this.paragraphList = list;
+    }
+
+    @Override
+    public void print() {
+        for (Paragraph paragraph : paragraphList) {
+            paragraph.print();
+            System.out.println();
+        }
     }
 
     @Override
@@ -27,21 +44,24 @@ public class Text {
 
         Text text = (Text) o;
 
-        if (sentences != null) return sentences.equals(text.sentences);
-        return text.sentences == null;
+        if (content != null) {
+            if (!content.equals(text.content)) return false;
+        } else {
+            if (text.content != null) return false;
+        }
+        if (paragraphList != null) return paragraphList.equals(text.paragraphList);
+        return text.paragraphList == null;
     }
 
     @Override
     public int hashCode() {
-        return sentences != null
-                ? sentences.hashCode()
-                : 0;
+        int result = content != null ? content.hashCode() : 0;
+        result = 31 * result + (paragraphList != null ? paragraphList.hashCode() : 0);
+        return result;
     }
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("Text:\n");
-        sentences.forEach(sb::append);
-        return sb.toString();
+        return getClass().getSimpleName() + " - content: " + content + " - paragraphList: " + paragraphList.toString();
     }
 }
