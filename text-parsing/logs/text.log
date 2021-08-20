@@ -1,0 +1,5 @@
+"2021-08-12 23:07:51 [t] INFO  Main - start method
+""2021-08-12 23:07:51 [t] WARN  Main - Warning | Loggers!
+""2021-08-12 23:07:51 [t] ERROR Main - runtime in method main
+" java.lang.RuntimeException: Exception 1
+	at Main.main(Main.java:13) [Test/:?]
