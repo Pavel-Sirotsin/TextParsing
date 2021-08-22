@@ -1,7 +1,11 @@
 package com.epam.text.service;
 
+import com.epam.text.service.impl.TextLauncherImpl;
+
 public class ServiceProvider {
     private static final ServiceProvider instance = new ServiceProvider();
+
+    private TextLauncherImpl launcher = new TextLauncherImpl();
 
 
     private ServiceProvider() {
@@ -11,7 +15,7 @@ public class ServiceProvider {
         return instance;
     }
 
-
-
-
+    public TextLauncherImpl getLauncher() {
+        return launcher;
+    }
 }

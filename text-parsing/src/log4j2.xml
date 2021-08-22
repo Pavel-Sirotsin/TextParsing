@@ -7,7 +7,7 @@
         <property name="pattern_file">"%d{yyyy-MM-dd HH:mm:ss} [t] %-5level %logger{5} - %msg%n"</property>
         <property name="pattern_console">"%r [%t] %-5level %logger{1} - %msg%n"</property>
     </Properties>
-    <ThresholdFilter level="trace"/>
+    <ThresholdFilter level="warn"/>
     <!-- ALL - DEBUG - INFO - WARN - ERROR - FATAL - OFF -TRACE -->
 
     <Appenders>

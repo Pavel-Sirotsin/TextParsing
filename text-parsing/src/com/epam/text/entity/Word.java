@@ -1,6 +1,6 @@
 package com.epam.text.entity;
 
-public class Word implements TextPart {
+public class Word implements TextPart , Comparable<Word>{
     private String lexeme;
 
     public Word() {
@@ -20,7 +20,7 @@ public class Word implements TextPart {
 
     @Override
     public void print() {
-        System.out.println(lexeme + " ");
+        System.out.print(lexeme);
     }
 
     @Override
@@ -42,5 +42,10 @@ public class Word implements TextPart {
     @Override
     public String toString() {
         return getClass().getSimpleName() + " - lexeme: " + lexeme;
+    }
+
+    @Override
+    public int compareTo(Word o) {
+        return lexeme.compareTo(o.lexeme);
     }
 }

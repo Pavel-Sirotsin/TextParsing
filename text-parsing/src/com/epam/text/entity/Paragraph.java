@@ -1,10 +1,11 @@
 package com.epam.text.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Paragraph implements TextPart {
     private String content;
-    private List<Sentence> sentenceList;
+    private List<Sentence> sentenceList = new ArrayList<>();
 
     public Paragraph() {
     }
@@ -27,6 +28,14 @@ public class Paragraph implements TextPart {
 
     public void setSentenceList(List<Sentence> sentenceList) {
         this.sentenceList = sentenceList;
+    }
+
+    public void add(Sentence sentence){
+        sentenceList.add(sentence);
+    }
+
+    public void remove(Sentence sentence){
+        sentenceList.remove(sentence);
     }
 
     @Override

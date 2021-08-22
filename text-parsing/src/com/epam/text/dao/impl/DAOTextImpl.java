@@ -1,7 +1,7 @@
 package com.epam.text.dao.impl;
 
 import com.epam.text.dao.DAOException;
-import com.epam.text.dao.TextFromFileAble;
+import com.epam.text.dao.DAOTextAble;
 import com.epam.text.entity.Text;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,15 +10,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TextFromFileImpl implements TextFromFileAble {
-    private static final Logger logger = LogManager.getLogger(TextFromFileImpl.class);
+public class DAOTextImpl implements DAOTextAble {
+    private static final Logger logger = LogManager.getLogger(DAOTextImpl.class);
 
     @Override
-    public Text getTextFroSource() throws DAOException {
+    public Text getTextFromSource() throws DAOException {
         Text text;
 
         try (
-                BufferedReader reader = new BufferedReader(new FileReader("text-parsing/src/com/epam/text/source/text.txt"))
+                BufferedReader reader = new BufferedReader(new FileReader("src/com/epam/text/source/text.txt"))
         ) {
             StringBuilder sb = new StringBuilder();
             int symbol;
@@ -30,7 +30,7 @@ public class TextFromFileImpl implements TextFromFileAble {
             String content = sb.toString();
             text = new Text(content);
 
-            logger.info("was gotten file from source and created entity: " + text.getClass().getSimpleName());
+            logger.info("The file was received and an object was created: " + text.getClass().getSimpleName());
 
         } catch (IOException e) {
             throw new DAOException(e);

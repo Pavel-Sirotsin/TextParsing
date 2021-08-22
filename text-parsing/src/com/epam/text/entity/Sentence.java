@@ -1,10 +1,11 @@
 package com.epam.text.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Sentence implements TextPart {
     private String content;
-    private List<Word> wordList;
+    private List<Word> wordList = new ArrayList<>();
 
     public Sentence() {
     }
@@ -27,6 +28,14 @@ public class Sentence implements TextPart {
 
     public void setWordList(List<Word> wordList) {
         this.wordList = wordList;
+    }
+
+    public void add(Word word){
+        wordList.add(word);
+    }
+
+    public void remove(Word word){
+        wordList.remove(word);
     }
 
     @Override

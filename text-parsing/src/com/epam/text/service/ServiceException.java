@@ -1,4 +1,4 @@
-package com.epam.fshop.service;
+package com.epam.text.service;
 
 public class ServiceException extends Exception{
     public ServiceException() {
