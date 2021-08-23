@@ -22,6 +22,7 @@ public class SplitBYSentence extends Splitter{
                 sentenceArray = paragraph.getContent().split(REGEX_SENTENCE);
 
                 for (String content : sentenceArray) {
+                    content = content.replaceAll(" {2,}"," ");
                     paragraph.add(new Sentence(content));
                 }
             }

@@ -7,7 +7,7 @@
         <property name="pattern_file">"%d{yyyy-MM-dd HH:mm:ss} [t] %-5level %logger{5} - %msg%n"</property>
         <property name="pattern_console">"%r [%t] %-5level %logger{1} - %msg%n"</property>
     </Properties>
-    <ThresholdFilter level="warn"/>
+    <ThresholdFilter level="trace"/>
     <!-- ALL - DEBUG - INFO - WARN - ERROR - FATAL - OFF -TRACE -->
 
     <Appenders>
@@ -19,7 +19,7 @@
             </Filters>
         </Console>
 
-        <File name="File_Appender" fileName="logs/text.log" bufferedIO="true">
+        <File name="File_Appender" fileName="logs/history.log" bufferedIO="true">
             <PatternLayout pattern="${pattern_file}"/>
         </File>
 
@@ -62,8 +62,8 @@
         </Logger> -->
 
         <Root level="debug">
-            <AppenderRef ref="File_Appender"/>
-            <AppenderRef ref="Console_Appender" level="trace"/>
+            <AppenderRef ref="File_Appender" level = "info"/>
+            <AppenderRef ref="Console_Appender" level= "error"/>
         </Root>
     </Loggers>
 </Configuration>

@@ -3,10 +3,9 @@ package com.epam.text.service.splitter;
 import com.epam.text.entity.Text;
 
 public abstract class Splitter {
-    public static final String REGEX_PARAGRAPH = "(?<=\\n)(?!\\s)";    //  "(?!.)\\n+"  "(?<=\n)\n"
-    public static final String REGEX_SENTENCE = "(?<=.?[.!?])|(?<=.\\n)"; // "(.+?[.!?])?(?(1)(?<=[.!?])|(?<=.\\n))"  "(?<=[.!?])" "(?<=.?[.!?])|(?<=.\n)"
-    public static final String REGEX_WORD = "(?<=\\s|\\p{Punct})";
-    //mark \s*(?<=[[:punct:]])
+    public static final String REGEX_PARAGRAPH = "(?<=\\n)(?!\\s)";
+    public static final String REGEX_SENTENCE = "(?<=.?[.!?\\n])";
+    public static final String REGEX_WORD = "(?<= )";
 
     protected Splitter nextSplitter;
 

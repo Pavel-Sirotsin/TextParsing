@@ -2,7 +2,6 @@ package com.epam.text.dao.impl;
 
 import com.epam.text.dao.DAOException;
 import com.epam.text.dao.DAOTextAble;
-import com.epam.text.entity.Text;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,9 +13,8 @@ public class DAOTextImpl implements DAOTextAble {
     private static final Logger logger = LogManager.getLogger(DAOTextImpl.class);
 
     @Override
-    public Text getTextFromSource() throws DAOException {
-        Text text;
-
+    public String getTextFromSource() throws DAOException {
+        String content = null;
         try (
                 BufferedReader reader = new BufferedReader(new FileReader("src/com/epam/text/source/text.txt"))
         ) {
@@ -27,15 +25,14 @@ public class DAOTextImpl implements DAOTextAble {
                 sb.append((char) symbol);
             }
 
-            String content = sb.toString();
-            text = new Text(content);
+            content = sb.toString();
 
-            logger.info("The file was received and an object was created: " + text.getClass().getSimpleName());
+            logger.info("The content from the file was received .length(): " + content.length());
 
         } catch (IOException e) {
             throw new DAOException(e);
         }
 
-        return text;
+        return content;
     }
 }

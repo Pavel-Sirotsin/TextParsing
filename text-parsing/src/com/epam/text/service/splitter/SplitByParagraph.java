@@ -15,14 +15,12 @@ public class SplitByParagraph extends Splitter {
     @Override
     public void split(SplitType type, Text text) {
         if (SplitType.PARAGRAPH.equals(type)) {
-            String[] paragraphArray = text.getContent()
-                    .replaceAll("\\ {2,}"," ")
-                    .split(REGEX_PARAGRAPH);
+            String[] paragraphArray = text.getContent().split(REGEX_PARAGRAPH);
 
             for (String content : paragraphArray) {
+                content = content.replaceAll("[\\r\\n]{2,}","\n");
                 text.add(new Paragraph(content));
             }
-//            logger.info(Arrays.toString(paragraphArray));
             logger.info("content was split by paragraph and add to list - .size(): "
                     + text.getParagraphList().size());
         }

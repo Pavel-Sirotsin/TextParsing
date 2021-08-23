@@ -3,11 +3,15 @@ package com.epam.text.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sentence implements TextPart {
+public class Sentence implements TextPart, Comparable<Sentence> {
     private String content;
     private List<Word> wordList = new ArrayList<>();
 
     public Sentence() {
+    }
+
+    public Sentence(List<Word> wordList) {
+        this.wordList = wordList;
     }
 
     public Sentence(String content) {
@@ -30,11 +34,11 @@ public class Sentence implements TextPart {
         this.wordList = wordList;
     }
 
-    public void add(Word word){
+    public void add(Word word) {
         wordList.add(word);
     }
 
-    public void remove(Word word){
+    public void remove(Word word) {
         wordList.remove(word);
     }
 
@@ -69,5 +73,13 @@ public class Sentence implements TextPart {
     @Override
     public String toString() {
         return getClass().getSimpleName() + " - content: " + content + " - wordList: " + wordList.toString();
+    }
+
+
+    @Override
+    public int compareTo(Sentence o) {
+        int sizeOne = wordList.size();
+        int sizeTwo = o.wordList.size();
+        return Integer.compare(sizeOne, sizeTwo);
     }
 }

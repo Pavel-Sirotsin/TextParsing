@@ -1,0 +1,14 @@
+"2021-08-23 23:25:50 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-23 23:25:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-23 23:25:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitBYSentence
+""2021-08-23 23:25:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by sentence and add to list
+""2021-08-23 23:25:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitByWord
+""2021-08-23 23:25:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by word and add to list
+""2021-08-23 23:25:50 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitBYSentence
+""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by sentence and add to list
+""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitByWord
+""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by word and add to list
+""2021-08-23 23:25:52 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
+"
