@@ -9,10 +9,10 @@ public class ControllerImpl implements Controller {
     private CommandProvider provider = new CommandProvider();
 
     @Override
-    public void doAction(String operation) {
+    public int doAction(String operation) {
 
         Command current = provider.getCommand(operation);
 
-        current.execute();
+        return current.execute();
     }
 }

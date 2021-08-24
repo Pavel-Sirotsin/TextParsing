@@ -19,11 +19,12 @@ public class MainViewerImpl implements MainViewer {
                 "2) В каждом предложении текста поменять местами первое слово с последним не изменяя длинны предложения.\n" +
                 "3) В некотором предложении текста слова заданной длинны заменить указанной подстрокой,\n" +
                 "длинна которой может не совподать с длинной слова: " +
-                "заданная длинна - 5 букв, подстрака: \"SUBSTRING\".";
+                "заданная длинна (случайно), подстрака: \" *** IN-HONOR-Of-STRING *** \".\n" +
+                "***************************************";
     }
 
     @Override
-    public void chooseOperation() {
+    public int chooseOperation() {
         ControllerProvider provider = ControllerProvider.getInstance();
         Controller controller = provider.getController();
 
@@ -35,7 +36,7 @@ public class MainViewerImpl implements MainViewer {
 
         String request = input.next();
 
-        controller.doAction(request);
+        return controller.doAction(request);
     }
 
     @Override

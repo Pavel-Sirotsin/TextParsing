@@ -13,12 +13,14 @@ public class TextLauncherImpl implements TextLauncher {
     private static final Logger logger = LogManager.getLogger(TextLauncherImpl.class);
 
     @Override
-    public void reassembleText() {
+    public int reassembleText() {
         logger.info("the text will be reassembled by chain of splitters");
 
         ORIGIN.getParagraphList().clear();
         splitTextIntoPart();
+        return 0;
     }
+
     @Override
     public void splitTextIntoPart() {
         Splitter splitByWord = new SplitByWord(null);

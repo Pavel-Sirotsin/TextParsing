@@ -11,9 +11,9 @@ import com.epam.text.view.ViewerProvider;
  * - В каждом предложении текста поменять местами первое слово с последним не изменяя длинны предложения.
  * - В некотором предложении текста слова заданной длинны заменить указанной подстрокой,
  * длинна которой может не совподать с длинной слова:
- * заданная длинна - 5 букв(for example), подстрака: "SUBSTRING"(for example).
+ * заданная длинна(случайно), указанная подстрака(" *** IN-HONOR-Of-STRING *** ")
  * - log4J2
- * - Patterns: Composite (partly applied in Text tree), Chain Of Responsibility(applied for content slicing)
+ * - Patterns: Composite (partly applied in Text tree for printing), Chain Of Responsibility(applied for content slicing)
  * <p>
  * 20 Aug 2021  * @author
  * Pavel Sirotsin
@@ -27,12 +27,12 @@ public class Main {
         String response = mainViewer.showMenu();
         System.out.println(response);
 
-        mainViewer.chooseOperation();
+        int result = mainViewer.chooseOperation();
 
-        System.out.println("\n***************************************\n");
-        mainViewer.reassembleQuestion();
-
-
+        if (result == 0) {
+            System.out.println("\n***************************************\n");
+            mainViewer.reassembleQuestion();
+        }
     }
 
 

@@ -1,0 +1,25 @@
+"2021-08-24 19:04:24 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2826
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2826
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 19:04:24 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 19:04:24 [t] INFO  epam.text.controller.impl.ChangeRandomlyWordByTheLength - each word of the specified length was randomly changed on "SUBSTRING"
+""2021-08-24 19:05:19 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2826
+""2021-08-24 19:05:19 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2826
+""2021-08-24 19:05:20 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 19:05:20 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 19:05:20 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 19:05:20 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 19:05:20 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 19:05:20 [t] INFO  epam.text.controller.impl.ChangeRandomlyWordByTheLength - each word of the specified length was randomly changed on "SUBSTRING"
+""2021-08-24 19:06:06 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2826
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2826
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 19:06:06 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 19:06:06 [t] INFO  epam.text.controller.impl.ChangeRandomlyWordByTheLength - each word of the specified length was randomly changed on "SUBSTRING"
+"

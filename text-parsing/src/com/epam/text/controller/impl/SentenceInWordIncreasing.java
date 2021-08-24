@@ -15,7 +15,7 @@ public class SentenceInWordIncreasing implements Command {
     private static final Logger logger = LogManager.getLogger(SentenceInWordIncreasing.class);
 
     @Override
-    public void execute() {
+    public int execute() {
         ServiceProvider logic = ServiceProvider.getInstance();
         TextLauncher launcher = logic.getLauncherImpl();
         TextService service = logic.getServiceImpl();
@@ -33,9 +33,11 @@ public class SentenceInWordIncreasing implements Command {
 
         Text workSample = TextLauncher.ORIGIN;
 
-        service.doSentenceInWordIncreasing(workSample);
+        int result = service.doSentenceInWordIncreasing(workSample);
         logger.info("the text was sorted by words increasing in each sentence");
 
-        textViewer.makeReadableAnswer(workSample);
+        textViewer.makeReadableAnswer(workSample, result);
+
+        return result;
     }
 }

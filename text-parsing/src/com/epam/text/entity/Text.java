@@ -40,7 +40,11 @@ public class Text implements TextPart {
 
     @Override
     public void print() {
-       paragraphList.forEach(Paragraph::print);
+        for (Paragraph paragraph : paragraphList ) {
+            paragraph.print();
+            System.out.println();
+        }
+//       paragraphList.forEach(Paragraph::print);
     }
 
     @Override

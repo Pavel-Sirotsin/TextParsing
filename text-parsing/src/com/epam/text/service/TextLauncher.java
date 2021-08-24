@@ -5,7 +5,7 @@ import com.epam.text.entity.Text;
 public interface TextLauncher {
     Text ORIGIN = new Text();
 
-    void reassembleText();
+    int reassembleText();
 
     void splitTextIntoPart() ;
 

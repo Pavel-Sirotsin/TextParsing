@@ -7,11 +7,11 @@ import java.util.Objects;
 
 public class TextViewerImpl implements TextViewer {
     @Override
-    public void makeReadableAnswer(Text text) {
-        if (Objects.nonNull(text)) {
+    public void makeReadableAnswer(Text text, int result) {
+        if (Objects.nonNull(text) && result == 0) {
             text.print();
         } else {
-            System.err.println("The Text object is not exist!");
+            System.out.println("No matches!");
         }
     }
 }

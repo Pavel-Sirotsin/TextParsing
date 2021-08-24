@@ -40,7 +40,11 @@ public class Paragraph implements TextPart {
 
     @Override
     public void print() {
-        sentenceList.forEach(Sentence::print);
+        for (Sentence sentence : sentenceList) {
+            sentence.print();
+            System.out.println();
+        }
+//        sentenceList.forEach(Sentence::print);
     }
 
     @Override

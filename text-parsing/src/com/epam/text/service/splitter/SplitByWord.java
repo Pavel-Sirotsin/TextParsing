@@ -24,7 +24,7 @@ public class SplitByWord extends Splitter {
                     wordArray = sentence.getContent().split(REGEX_WORD);
 
                     for (String content : wordArray) {
-                        content = content.replaceAll(" +","");
+                        content = content.replaceAll("\\s","");
                         sentence.add(new Word(content));
                     }
                 }

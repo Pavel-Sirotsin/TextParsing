@@ -4,7 +4,7 @@ import com.epam.text.entity.Text;
 
 public abstract class Splitter {
     public static final String REGEX_PARAGRAPH = "(?<=[.!?])\\r\\n";
-    public static final String REGEX_SENTENCE = "(?<=[.!?\\n]) +";
+    public static final String REGEX_SENTENCE = "(?<=[.!?\\n])\\s+";
     public static final String REGEX_WORD = "(?<=\\s)";
 
     protected Splitter nextSplitter;

@@ -1,6 +1,7 @@
 package com.epam.text.entity;
 
-public class Word implements TextPart , Comparable<Word>{
+
+public class Word implements TextPart, Comparable<Word> {
     private String lexeme;
 
     public Word() {
@@ -20,7 +21,14 @@ public class Word implements TextPart , Comparable<Word>{
 
     @Override
     public void print() {
-        System.out.print(lexeme + " ");
+        if (lexeme.equalsIgnoreCase(" *** IN-HONOR-Of-STRING *** ")) {
+            String red = "\u001B[32m";
+            String reset = "\u001B[0m";
+            System.out.print(red + lexeme + " " + reset);
+        } else {
+            System.out.print(lexeme + " ");
+        }
+
     }
 
     @Override

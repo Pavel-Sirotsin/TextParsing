@@ -15,7 +15,7 @@ public class ChangeFirstWordOnLast implements Command {
     private static final Logger logger = LogManager.getLogger(ChangeFirstWordOnLast.class);
 
     @Override
-    public void execute() {
+    public int execute() {
         ServiceProvider logic = ServiceProvider.getInstance();
         TextLauncher launcher = logic.getLauncherImpl();
         TextService service = logic.getServiceImpl();
@@ -33,9 +33,10 @@ public class ChangeFirstWordOnLast implements Command {
 
         Text text = TextLauncher.ORIGIN;
 
-        service.changeFirstWordOnLast(text);
+        int result = service.changeFirstWordOnLast(text);
         logger.info("first word in each sentence was changed on last");
 
-        textViewer.makeReadableAnswer(text);
+        textViewer.makeReadableAnswer(text, result);
+        return result;
     }
 }

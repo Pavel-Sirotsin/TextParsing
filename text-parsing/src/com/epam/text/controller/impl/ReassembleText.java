@@ -11,20 +11,22 @@ import org.apache.logging.log4j.Logger;
 
 public class ReassembleText implements Command {
     private static final Logger logger = LogManager.getLogger(ReassembleText.class);
+
     @Override
-    public void execute() {
+    public int execute() {
         ServiceProvider logic = ServiceProvider.getInstance();
         TextLauncher launcher = logic.getLauncherImpl();
 
         ViewerProvider view = ViewerProvider.getInstance();
         TextViewer textViewer = view.getTextViewer();
 
-        launcher.reassembleText();
+        int result = launcher.reassembleText();
         logger.info("the text was reassembled");
 
         Text workSample = TextLauncher.ORIGIN;
 
-        textViewer.makeReadableAnswer(workSample);
+        textViewer.makeReadableAnswer(workSample, result);
 
+        return result;
     }
 }

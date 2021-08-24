@@ -15,7 +15,7 @@ public class ChangeRandomlyWordByTheLength implements Command {
     private static final Logger logger = LogManager.getLogger(ChangeRandomlyWordByTheLength.class);
 
     @Override
-    public void execute() {
+    public int execute() {
         ServiceProvider logic = ServiceProvider.getInstance();
         TextLauncher launcher = logic.getLauncherImpl();
         TextService service = logic.getServiceImpl();
@@ -33,9 +33,11 @@ public class ChangeRandomlyWordByTheLength implements Command {
 
         Text workSample = TextLauncher.ORIGIN;
 
-        service.changeRapidlyWordByTheLength(workSample);
+        int result = service.changeRandomlyWordByTheLength(workSample);
+
         logger.info("each word of the specified length was randomly changed on \"SUBSTRING\"");
 
-        textViewer.makeReadableAnswer(workSample);
+        textViewer.makeReadableAnswer(workSample, result);
+        return result;
     }
 }

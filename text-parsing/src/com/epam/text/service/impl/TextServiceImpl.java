@@ -12,16 +12,17 @@ public class TextServiceImpl implements TextService {
 
     private void swap(LinkedList<Word> exchange) {
         Word first, last;
-        first = exchange.removeFirst();
-        last = exchange.removeLast();
+        if ((first = exchange.pollFirst()) != null
+                && (last = exchange.pollLast()) != null) {
 
-        exchange.addFirst(last);
-        exchange.addLast(first);
+            exchange.addFirst(last);
+            exchange.addLast(first);
+        }
 
     }
 
     @Override
-    public void doSentenceInWordIncreasing(Text workSample) {
+    public int doSentenceInWordIncreasing(Text workSample) {
         List<Sentence> allTogether = new ArrayList<>();
 
         for (Paragraph paragraph : workSample.getParagraphList()) {
@@ -44,12 +45,12 @@ public class TextServiceImpl implements TextService {
             paragraph.setSentenceList(sublist);
         }
 
-
+        return 0;
     }
 
 
     @Override
-    public void changeFirstWordOnLast(Text workSample) {
+    public int changeFirstWordOnLast(Text workSample) {
         LinkedList<Word> exchange;
 
         for (Paragraph paragraph : workSample.getParagraphList()) {
@@ -60,11 +61,26 @@ public class TextServiceImpl implements TextService {
             }
 
         }
-
+        return 0;
     }
 
     @Override
-    public void changeRapidlyWordByTheLength(Text workSample) {
+    public int changeRandomlyWordByTheLength(Text workSample) {
+        for (Paragraph paragraph : workSample.getParagraphList()) {
+            for (Sentence sentence : paragraph.getSentenceList()) {
+                for (Word word : sentence.getWordList()) {
+                    String toReplace = " *** IN-HONOR-Of-STRING *** ";
+                    int wordLength = (int)(Math.random() * 10);
+
+                    if (word.getLexeme().length() == wordLength) {
+                        word.setLexeme(toReplace);
+                        return 0;
+                    }
+                }
+            }
+        }
+
+        return 1;
     }
 
 }
