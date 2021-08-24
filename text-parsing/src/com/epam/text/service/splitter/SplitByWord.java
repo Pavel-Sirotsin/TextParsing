@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class SplitByWord extends Splitter {
-    private static final Logger logger = LogManager.getLogger(SplitByParagraph.class);
+    private static final Logger logger = LogManager.getLogger(SplitByWord.class);
 
     public SplitByWord(Splitter next) {
         super(next);
@@ -24,11 +24,12 @@ public class SplitByWord extends Splitter {
                     wordArray = sentence.getContent().split(REGEX_WORD);
 
                     for (String content : wordArray) {
+                        content = content.replaceAll(" +","");
                         sentence.add(new Word(content));
                     }
                 }
             }
-            logger.info("content was split by word and add to list");
+            logger.info("content was split by word and add to list.");
         }
 
         if (nextSplitter != null) {

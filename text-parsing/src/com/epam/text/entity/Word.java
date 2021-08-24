@@ -20,7 +20,7 @@ public class Word implements TextPart , Comparable<Word>{
 
     @Override
     public void print() {
-        System.out.print(lexeme);
+        System.out.print(lexeme + " ");
     }
 
     @Override

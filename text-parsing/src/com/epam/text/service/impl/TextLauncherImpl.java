@@ -14,7 +14,7 @@ public class TextLauncherImpl implements TextLauncher {
 
     @Override
     public void reassembleText() {
-        logger.info("The text will be reassembled by chain of splitters");
+        logger.info("the text will be reassembled by chain of splitters");
 
         ORIGIN.getParagraphList().clear();
         splitTextIntoPart();
@@ -40,9 +40,8 @@ public class TextLauncherImpl implements TextLauncher {
             throw new ServiceException(e);
         }
 
-        logger.info("the content was uploaded to the entity .length(): " + ORIGIN.getContent().length());
-
         ORIGIN.setContent(content);
+        logger.info("the content was uploaded to the entity .length(): " + ORIGIN.getContent().length());
     }
 
 

@@ -7,7 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class SplitBYSentence extends Splitter{
-    private static final Logger logger = LogManager.getLogger(SplitByParagraph.class);
+    private static final Logger logger = LogManager.getLogger(SplitBYSentence.class);
 
     public SplitBYSentence(Splitter next) {
         super(next);
@@ -22,7 +22,6 @@ public class SplitBYSentence extends Splitter{
                 sentenceArray = paragraph.getContent().split(REGEX_SENTENCE);
 
                 for (String content : sentenceArray) {
-                    content = content.replaceAll(" {2,}"," ");
                     paragraph.add(new Sentence(content));
                 }
             }
@@ -31,7 +30,7 @@ public class SplitBYSentence extends Splitter{
         }
 
         if (nextSplitter != null) {
-            logger.info("Text was send to another splitter: " + nextSplitter.getClass().getSimpleName());
+            logger.info("text was send to another splitter.");
             nextSplitter.split(SplitType.WORD, text);
         }
     }

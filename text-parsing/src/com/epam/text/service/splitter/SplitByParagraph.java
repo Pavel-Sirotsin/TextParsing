@@ -18,7 +18,7 @@ public class SplitByParagraph extends Splitter {
             String[] paragraphArray = text.getContent().split(REGEX_PARAGRAPH);
 
             for (String content : paragraphArray) {
-                content = content.replaceAll("[\\r\\n]{2,}","\n");
+                content = content.replaceAll("(\\r\\n)+","\n");
                 text.add(new Paragraph(content));
             }
             logger.info("content was split by paragraph and add to list - .size(): "
@@ -26,7 +26,7 @@ public class SplitByParagraph extends Splitter {
         }
 
         if (nextSplitter != null) {
-            logger.info("Text was send to another splitter: " + nextSplitter.getClass().getSimpleName());
+            logger.info("the text was send to another splitter.");
             nextSplitter.split(SplitType.SENTENCE, text);
         }
     }

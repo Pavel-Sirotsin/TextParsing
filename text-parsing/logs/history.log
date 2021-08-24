@@ -11,4 +11,282 @@
 ""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitByWord
 ""2021-08-23 23:25:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by word and add to list
 ""2021-08-23 23:25:52 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
+""2021-08-24 10:40:09 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 10:41:34 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitBYSentence
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by sentence and add to list
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitByWord
+""2021-08-24 10:41:34 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by word and add to list
+""2021-08-24 10:41:34 [t] INFO  epam.text.controller.impl.ChangeFirstWordOnLast - first word in each sentence was changed on last
+""2021-08-24 10:42:03 [t] INFO  epam.text.view.impl.MainViewerImpl - wrong input
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.impl.TextLauncherImpl - The text will be reassembled by chain of splitters
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitBYSentence
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by sentence and add to list
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - Text was send to another splitter: SplitByWord
+""2021-08-24 10:42:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by word and add to list
+""2021-08-24 10:42:06 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
+""2021-08-24 10:50:09 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 10:50:09 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:00:09 [t] INFO  epam.text.controller.impl.ChangeFirstWordOnLast - first word in each sentence was changed on last
+""2021-08-24 11:00:18 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:00:18 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:03:15 [t] INFO  epam.text.controller.impl.ChangeFirstWordOnLast - first word in each sentence was changed on last
+""2021-08-24 11:04:16 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:04:16 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:05:52 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:05:52 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:09:46 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 18
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:09:46 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:27:50 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:27:50 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:27:50 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 11:29:36 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:29:36 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:30:04 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:30:04 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:32:49 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:32:49 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:32:59 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:32:59 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:34:28 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:34:28 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:35:25 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:35:25 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:39:12 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:39:12 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:42:57 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:42:57 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:43:39 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:43:39 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 11:56:43 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 11:56:43 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:10:07 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:10:07 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:10:08 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:10:08 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:10:08 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:10:08 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 12:10:08 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:10:08 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.impl.TextLauncherImpl - the text will be reassembled by chain of splitters
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 12:10:54 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:10:54 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
+""2021-08-24 12:11:51 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 12:11:51 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:11:51 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 12:12:41 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 12:12:41 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:12:41 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 12:13:30 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 12:13:30 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 12:13:30 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 12:17:57 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:17:57 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:21:07 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 14
+""2021-08-24 12:21:07 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:21:15 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:21:15 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:21:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 1
+""2021-08-24 12:21:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:21:59 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 12:21:59 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 12:55:10 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 12:55:10 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 12:55:10 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 12:55:10 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:05:16 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:05:16 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:05:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:05:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:06:37 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:06:37 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:06:37 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:06:37 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:06:45 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:06:45 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:06:45 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:06:45 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:09:04 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:09:04 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:09:04 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:09:04 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:09:14 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:09:14 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:09:14 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:09:14 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:10:00 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:10:00 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:10:00 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:10:00 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:10:09 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:10:09 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:10:09 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:10:24 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:10:24 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:10:24 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:10:24 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:18:28 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:18:28 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:18:28 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:18:28 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:18:38 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:18:38 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:18:38 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:18:38 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:26:25 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:26:25 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:26:25 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:26:25 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:26:53 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:26:53 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:26:53 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:26:53 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:27:01 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:27:01 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:27:01 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:27:01 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:27:06 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:27:06 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:27:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:27:06 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:27:06 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:27:06 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:27:44 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:27:44 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:27:54 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:27:54 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:27:54 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:27:54 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:27:54 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:27:54 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:28:32 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:28:32 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:28:39 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:28:39 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:28:39 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:28:39 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:28:39 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:28:39 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:29:37 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2809
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2809
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:29:37 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:29:37 [t] INFO  epam.text.controller.impl.SentenceInWordIncreasing - the text was sorted by words increasing in each sentence
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.impl.TextLauncherImpl - the text will be reassembled by chain of splitters
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-24 13:29:51 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-24 13:29:51 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
 "

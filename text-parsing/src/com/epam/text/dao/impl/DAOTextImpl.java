@@ -15,6 +15,7 @@ public class DAOTextImpl implements DAOTextAble {
     @Override
     public String getTextFromSource() throws DAOException {
         String content = null;
+
         try (
                 BufferedReader reader = new BufferedReader(new FileReader("src/com/epam/text/source/text.txt"))
         ) {
@@ -27,11 +28,11 @@ public class DAOTextImpl implements DAOTextAble {
 
             content = sb.toString();
 
-            logger.info("The content from the file was received .length(): " + content.length());
-
         } catch (IOException e) {
             throw new DAOException(e);
         }
+
+        logger.info("The content from the file was received .length(): " + content.length());
 
         return content;
     }

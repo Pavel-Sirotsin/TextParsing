@@ -11,9 +11,9 @@ import com.epam.text.view.ViewerProvider;
  * - В каждом предложении текста поменять местами первое слово с последним не изменяя длинны предложения.
  * - В некотором предложении текста слова заданной длинны заменить указанной подстрокой,
  * длинна которой может не совподать с длинной слова:
- * заданная длинна - 5 букв, подстрака: "SUBSTRING".
+ * заданная длинна - 5 букв(for example), подстрака: "SUBSTRING"(for example).
  * - log4J2
- * - Patterns: Composite, Chain Of Responsibility
+ * - Patterns: Composite (partly applied in Text tree), Chain Of Responsibility(applied for content slicing)
  * <p>
  * 20 Aug 2021  * @author
  * Pavel Sirotsin
