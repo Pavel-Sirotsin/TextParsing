@@ -20,15 +20,16 @@ public class Word implements TextPart, Comparable<Word> {
     }
 
     @Override
-    public void print() {
+    public String print() {
+        StringBuilder sb = new StringBuilder();
         if (lexeme.equalsIgnoreCase(" *** IN-HONOR-Of-STRING *** ")) {
             String red = "\u001B[32m";
             String reset = "\u001B[0m";
-            System.out.print(red + lexeme + " " + reset);
+            sb.append(red + lexeme + " " + reset);
         } else {
-            System.out.print(lexeme + " ");
+            sb.append(lexeme + " ");
         }
-
+        return sb.toString();
     }
 
     @Override

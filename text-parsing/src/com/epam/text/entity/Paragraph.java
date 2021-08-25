@@ -39,12 +39,13 @@ public class Paragraph implements TextPart {
     }
 
     @Override
-    public void print() {
+    public String print() {
+        StringBuilder sb = new StringBuilder();
         for (Sentence sentence : sentenceList) {
-            sentence.print();
-            System.out.println();
+            sb.append(sentence.print());
+            sb.append("\n");
         }
-//        sentenceList.forEach(Sentence::print);
+        return sb.toString();
     }
 
     @Override

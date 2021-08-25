@@ -9,7 +9,7 @@ public class TextViewerImpl implements TextViewer {
     @Override
     public void makeReadableAnswer(Text text, int result) {
         if (Objects.nonNull(text) && result == 0) {
-            text.print();
+            System.out.print(text.print());
         } else {
             System.out.println("No matches!");
         }

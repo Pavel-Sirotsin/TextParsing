@@ -13,4 +13,19 @@
 ""2021-08-25 17:13:28 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
 ""2021-08-25 17:13:28 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
 ""2021-08-25 17:13:28 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
+""2021-08-25 18:32:42 [t] INFO  epam.text.dao.impl.DAOTextImpl - The content from the file was received .length(): 2826
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.impl.TextLauncherImpl - the content was uploaded to the entity .length(): 2826
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-25 18:32:42 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-25 18:32:42 [t] INFO  epam.text.controller.impl.ChangeRandomlyWordByTheLength - a word of the specified length was randomly changed on " *** IN-HONOR-Of-STRING *** "
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.impl.TextLauncherImpl - the text will be reassembled by chain of splitters
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+""2021-08-25 18:32:49 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+""2021-08-25 18:32:49 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled
 "

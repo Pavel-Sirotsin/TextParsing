@@ -43,8 +43,12 @@ public class Sentence implements TextPart {
     }
 
     @Override
-    public void print() {
-        wordList.forEach(Word::print);
+    public String print() {
+        StringBuilder sb = new StringBuilder();
+        for (Word word : wordList) {
+            sb.append(word.print());
+        }
+        return sb.toString();
     }
 
     @Override
