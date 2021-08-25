@@ -17,7 +17,7 @@ public class DAOTextImpl implements DAOTextAble {
         String content = null;
 
         try (
-                BufferedReader reader = new BufferedReader(new FileReader("src/com/epam/text/source/text.txt"))
+                BufferedReader reader = new BufferedReader(new FileReader("src/com/epam/text/source/the_statement.txt"))
         ) {
             StringBuilder sb = new StringBuilder();
             int symbol;
