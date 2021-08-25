@@ -1,4 +1,4 @@
-package com.epam.text.service.helper;
+package com.epam.text.service.utility;
 
 import com.epam.text.entity.Paragraph;
 import com.epam.text.entity.Sentence;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class TextHelper {
-    public static void putInOrderAfterSort(Text workSample, List<Sentence> allInOne) {
+public class TextUtility {
+    public static void placeInTextOrder(Text workSample, List<Sentence> allInOne) {
         int fromIndex = 0;
         int toIndex;
         List<Sentence> sublist;
@@ -26,6 +26,7 @@ public class TextHelper {
 
     public static List<Sentence> getAllInOne(Text workSample) {
         List<Sentence> allInOne = new ArrayList<>();
+
         for (Paragraph paragraph : workSample.getParagraphList()) {
             for (Sentence sentence : paragraph.getSentenceList()) {
                 allInOne.add(sentence);

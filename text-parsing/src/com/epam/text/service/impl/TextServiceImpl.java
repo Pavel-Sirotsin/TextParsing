@@ -5,7 +5,7 @@ import com.epam.text.entity.Sentence;
 import com.epam.text.entity.Text;
 import com.epam.text.entity.Word;
 import com.epam.text.service.TextService;
-import com.epam.text.service.helper.TextHelper;
+import com.epam.text.service.utility.TextUtility;
 
 import java.util.Collections;
 import java.util.LinkedList;
@@ -14,7 +14,7 @@ import java.util.List;
 public class TextServiceImpl implements TextService {
     @Override
     public int doSentenceInWordIncreasing(Text workSample) {
-        List<Sentence> allInOne = TextHelper.getAllInOne(workSample);
+        List<Sentence> allInOne = TextUtility.getAllInOne(workSample);
 
         Collections.sort(allInOne, (o1, o2) -> {
             int sizeOne = o1.getWordList().size();
@@ -22,7 +22,7 @@ public class TextServiceImpl implements TextService {
             return Integer.compare(sizeOne, sizeTwo);
         });
 
-        TextHelper.putInOrderAfterSort(workSample, allInOne);
+        TextUtility.placeInTextOrder(workSample, allInOne);
 
         return 0;
     }
@@ -35,7 +35,7 @@ public class TextServiceImpl implements TextService {
         for (Paragraph paragraph : workSample.getParagraphList()) {
             for (Sentence sentence : paragraph.getSentenceList()) {
                 exchange = new LinkedList<>(sentence.getWordList());
-                TextHelper.swap(exchange);
+                TextUtility.swap(exchange);
                 sentence.setWordList(exchange);
             }
 
