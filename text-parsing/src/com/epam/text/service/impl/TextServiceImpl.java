@@ -31,7 +31,14 @@ public class TextServiceImpl implements TextService {
             }
         }
 
-        Collections.sort(allTogether);
+        Collections.sort(allTogether, new Comparator<Sentence>() {
+            @Override
+            public int compare(Sentence o1, Sentence o2) {
+                int sizeOne = o1.getWordList().size();
+                int sizeTwo = o2.getWordList().size();
+                return Integer.compare(sizeOne, sizeTwo);
+            }
+        });
         int fromIndex = 0;
         int toIndex;
         List<Sentence> sublist;
@@ -70,7 +77,7 @@ public class TextServiceImpl implements TextService {
             for (Sentence sentence : paragraph.getSentenceList()) {
                 for (Word word : sentence.getWordList()) {
                     String toReplace = " *** IN-HONOR-Of-STRING *** ";
-                    int wordLength = (int)(Math.random() * 10);
+                    int wordLength = (int) (Math.random() * 10);
 
                     if (word.getLexeme().length() == wordLength) {
                         word.setLexeme(toReplace);

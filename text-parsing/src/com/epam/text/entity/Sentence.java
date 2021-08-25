@@ -3,7 +3,7 @@ package com.epam.text.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sentence implements TextPart, Comparable<Sentence> {
+public class Sentence implements TextPart {
     private String content;
     private List<Word> wordList = new ArrayList<>();
 
@@ -75,11 +75,4 @@ public class Sentence implements TextPart, Comparable<Sentence> {
         return getClass().getSimpleName() + " - content: " + content + " - wordList: " + wordList.toString();
     }
 
-
-    @Override
-    public int compareTo(Sentence o) {
-        int sizeOne = wordList.size();
-        int sizeTwo = o.wordList.size();
-        return Integer.compare(sizeOne, sizeTwo);
-    }
 }

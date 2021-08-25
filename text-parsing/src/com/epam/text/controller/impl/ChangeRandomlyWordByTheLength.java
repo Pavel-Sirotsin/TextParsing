@@ -35,7 +35,7 @@ public class ChangeRandomlyWordByTheLength implements Command {
 
         int result = service.changeRandomlyWordByTheLength(workSample);
 
-        logger.info("each word of the specified length was randomly changed on \"SUBSTRING\"");
+        logger.info("a word of the specified length was randomly changed on \" *** IN-HONOR-Of-STRING *** \"");
 
         textViewer.makeReadableAnswer(workSample, result);
         return result;
