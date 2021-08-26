@@ -7,7 +7,6 @@ import com.epam.text.entity.Word;
 import com.epam.text.service.TextService;
 import com.epam.text.service.utility.TextUtility;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,7 +15,7 @@ public class TextServiceImpl implements TextService {
     public int doSentenceInWordIncreasing(Text workSample) {
         List<Sentence> allInOne = TextUtility.getAllInOne(workSample);
 
-        Collections.sort(allInOne, (o1, o2) -> {
+        allInOne.sort((o1, o2) -> {
             int sizeOne = o1.getWordList().size();
             int sizeTwo = o2.getWordList().size();
             return Integer.compare(sizeOne, sizeTwo);
