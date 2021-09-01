@@ -7,6 +7,8 @@ import com.epam.text.entity.Word;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.List;
+
 public class SplitByWord extends Splitter {
     private static final Logger logger = LogManager.getLogger(SplitByWord.class);
 
@@ -17,24 +19,20 @@ public class SplitByWord extends Splitter {
     @Override
     public void split(SplitType type, Text text) {
         if (SplitType.WORD.equals(type)) {
-            String[] wordArray = null;
+            List<String> wordList;
 
-            for (Paragraph paragraph : text.getParagraphList()) {
-                for (Sentence sentence : paragraph.getSentenceList()) {
-                    wordArray = sentence.getContent().split(REGEX_WORD);
+        for (Paragraph paragraph : text.getParagraphList()) {
+            for (Sentence sentence : paragraph.getSentenceList()) {
+                String subject = sentence.getContent();
 
-                    for (String content : wordArray) {
-                        sentence.add(new Word(content));
-                    }
-                }
+                wordList = List.of(wordPattern.split(subject));
+                wordList.forEach(content -> sentence.add(new Word(content)));
+
             }
-            logger.info("content was split by word and add to list.");
         }
-
-        if (nextSplitter != null) {
-            logger.info("Text was send to another splitter: " + nextSplitter.getClass().getSimpleName());
-            nextSplitter.split(type, text);
-        }
+        logger.info("content was split by word and add to list.");
     }
+
+}
 }
 

@@ -5,6 +5,9 @@ import com.epam.text.entity.Text;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.List;
+import java.util.Objects;
+
 public class SplitByParagraph extends Splitter {
     private static final Logger logger = LogManager.getLogger(SplitByParagraph.class);
 
@@ -15,16 +18,16 @@ public class SplitByParagraph extends Splitter {
     @Override
     public void split(SplitType type, Text text) {
         if (SplitType.PARAGRAPH.equals(type)) {
-            String[] paragraphArray = text.getContent().split(REGEX_PARAGRAPH);
+            String subject = text.getContent();
 
-            for (String content : paragraphArray) {
-                text.add(new Paragraph(content));
-            }
+            List<String> paragraphArray = List.of(paragraphPattern.split(subject));
+            paragraphArray.forEach(content -> text.add(new Paragraph(content)));
+
             logger.info("content was split by paragraph and add to list - .size(): "
                     + text.getParagraphList().size());
         }
 
-        if (nextSplitter != null) {
+        if (Objects.nonNull(nextSplitter)) {
             logger.info("the text was send to another splitter.");
             nextSplitter.split(SplitType.SENTENCE, text);
         }

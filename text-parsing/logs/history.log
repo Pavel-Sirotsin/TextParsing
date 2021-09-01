@@ -1,0 +1,7 @@
+2021-09-01 09:47:16 [t] INFO  epam.text.service.impl.TextLauncherImpl - the text will be reassembled by chain of splitters
+2021-09-01 09:47:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - content was split by paragraph and add to list - .size(): 5
+2021-09-01 09:47:16 [t] INFO  epam.text.service.splitter.SplitByParagraph - the text was send to another splitter.
+2021-09-01 09:47:16 [t] INFO  epam.text.service.splitter.SplitBYSentence - content was split by sentence and add to list
+2021-09-01 09:47:16 [t] INFO  epam.text.service.splitter.SplitBYSentence - text was send to another splitter.
+2021-09-01 09:47:16 [t] INFO  epam.text.service.splitter.SplitByWord - content was split by word and add to list.
+2021-09-01 09:47:16 [t] INFO  epam.text.controller.impl.ReassembleText - the text was reassembled

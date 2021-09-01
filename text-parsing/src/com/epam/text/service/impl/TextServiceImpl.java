@@ -11,6 +11,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TextServiceImpl implements TextService {
+    private static final String REPLACEMENT = " *** IN-HONOR-Of-STRING *** ";
+
     @Override
     public int doSentenceInWordIncreasing(Text workSample) {
         List<Sentence> allInOne = TextUtility.getAllInOne(workSample);
@@ -47,11 +49,11 @@ public class TextServiceImpl implements TextService {
         for (Paragraph paragraph : workSample.getParagraphList()) {
             for (Sentence sentence : paragraph.getSentenceList()) {
                 for (Word word : sentence.getWordList()) {
-                    String toReplace = " *** IN-HONOR-Of-STRING *** ";
+
                     int wordLength = (int) (Math.random() * 10);
 
                     if (word.getLexeme().length() == wordLength) {
-                        word.setLexeme(toReplace);
+                        word.setLexeme(REPLACEMENT);
                         return 0;
                     }
                 }

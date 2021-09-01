@@ -14,6 +14,7 @@ public class TextUtility {
         int fromIndex = 0;
         int toIndex;
         List<Sentence> sublist;
+
         for (Paragraph paragraph : workSample.getParagraphList()) {
             toIndex = fromIndex + paragraph.getSentenceList().size();
 
@@ -28,9 +29,7 @@ public class TextUtility {
         List<Sentence> allInOne = new ArrayList<>();
 
         for (Paragraph paragraph : workSample.getParagraphList()) {
-            for (Sentence sentence : paragraph.getSentenceList()) {
-                allInOne.add(sentence);
-            }
+            paragraph.getSentenceList().forEach(sentence -> allInOne.add(sentence));
         }
         return allInOne;
     }
